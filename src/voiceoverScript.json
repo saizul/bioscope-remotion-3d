@@ -1,0 +1,62 @@
+[
+  {
+    "id": "scene_1",
+    "sceneName": "3D Intro & Brand Hook",
+    "startFrame": 0,
+    "endFrame": 450,
+    "durationInFrames": 450,
+    "timeRange": "0:00 - 0:15",
+    "audioFile": "voiceover_scene1.mp3",
+    "script": "Welcome to Bioscope Limited—where consultancy, outsourcing, and impact come together to build a better tomorrow. For over a decade, we have been Bangladesh's trusted multidisciplinary partner for private enterprises, government agencies, NGOs, and INGOs across all 64 districts."
+  },
+  {
+    "id": "scene_2",
+    "sceneName": "6 Core Services & Impact Numbers",
+    "startFrame": 450,
+    "endFrame": 1050,
+    "durationInFrames": 600,
+    "timeRange": "0:15 - 0:35",
+    "audioFile": "voiceover_scene2.mp3",
+    "script": "From high-level consultancy, research surveys, and digital IT solutions to event management, procurement, and nationwide outsourcing—we deliver comprehensive, result-oriented solutions. With over 100 successful projects and 1,500 deployed professionals, excellence is our standard."
+  },
+  {
+    "id": "scene_3",
+    "sceneName": "Why Organizations Should Request Manpower",
+    "startFrame": 1050,
+    "endFrame": 1950,
+    "durationInFrames": 900,
+    "timeRange": "0:35 - 1:05",
+    "audioFile": "voiceover_scene3.mp3",
+    "script": "Why should your organization choose Bioscope Limited for manpower? Because hiring shouldn't be a hassle. We bring government-grade compliance, following all regulatory guidelines, directly to private companies, factories, hospitals, offices, and apartment complexes. We provide pre-vetted, trained staff across 63 specialized job positions in 8 major categories—backed by strict payroll discipline, ethical transparency, and rapid nationwide replacement support."
+  },
+  {
+    "id": "scene_4",
+    "sceneName": "Why Job Seekers Should Apply",
+    "startFrame": 1950,
+    "endFrame": 2850,
+    "durationInFrames": 900,
+    "timeRange": "1:05 - 1:35",
+    "audioFile": "voiceover_scene4.mp3",
+    "script": "Looking for your next career opportunity? Here is why thousands of job seekers trust Bioscope Limited. Whether you are an IT specialist, engineer, office administrator, driver, security professional, or customer service expert, we connect your talent with top private companies and institutions across Bangladesh. With 63 diverse job roles, zero hidden hassle, guaranteed payroll discipline, and a quick two-minute online registration, your next big career move starts right here."
+  },
+  {
+    "id": "scene_5",
+    "sceneName": "Trust, Compliance & Credentials",
+    "startFrame": 2850,
+    "endFrame": 3240,
+    "durationInFrames": 390,
+    "timeRange": "1:35 - 1:48",
+    "audioFile": "voiceover_scene5.mp3",
+    "script": "As a Government Approved Vendor registered with RJSC and licensed by DIFE, every partnership we build is rooted in legal compliance, accountability, and sustainable growth."
+  },
+  {
+    "id": "scene_6",
+    "sceneName": "Call to Action & Contact Outro",
+    "startFrame": 3240,
+    "endFrame": 3600,
+    "durationInFrames": 360,
+    "timeRange": "1:48 - 2:00",
+    "audioFile": "voiceover_scene6.mp3",
+    "script": "Need reliable staff, or ready to apply for a job? Visit bioscopeltd.net or call us today. Bioscope Limited—your trusted partner for sustainable success."
+  }
+]

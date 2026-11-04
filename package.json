@@ -1,0 +1,26 @@
+{
+  "name": "bioscope-remotion-3d",
+  "version": "1.0.0",
+  "description": "2-Minute 3D Corporate Motion Graphics Video for Bioscope Limited in Remotion",
+  "scripts": {
+    "start": "remotion preview src/index.ts",
+    "build": "remotion render src/index.ts BioscopeCorporateVideo out/bioscope-corporate-3d.mp4",
+    "tts": "node scripts/generate-voiceover.js"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.105.0",
+    "@react-three/fiber": "^8.16.6",
+    "@remotion/three": "^4.0.200",
+    "lucide-react": "^0.378.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "remotion": "^4.0.200",
+    "three": "^0.164.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.2.79",
+    "@types/three": "^0.164.0",
+    "typescript": "^5.4.5"
+  }
+}
