@@ -5,7 +5,8 @@
   "scripts": {
     "start": "remotion preview src/index.ts",
     "build": "remotion render src/index.ts BioscopeCorporateVideo out/bioscope-corporate-3d.mp4",
-    "tts": "node scripts/generate-voiceover.js"
+    "tts": "node scripts/generate-voiceover.js",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@react-three/drei": "^9.105.0",
@@ -18,6 +19,7 @@
     "three": "^0.164.1"
   },
   "devDependencies": {
+    "@remotion/cli": "^4.0.541",
     "@types/node": "^20.12.7",
     "@types/react": "^18.2.79",
     "@types/three": "^0.164.0",
