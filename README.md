@@ -39,7 +39,6 @@ A production-ready, 2-minute (120 seconds, 3600 frames @ 30fps, 1920x1080 Full H
 
 ### Step 1: Install Dependencies
 ```bash
-cd "/Users/SaizulAmin/Saizul Old PC/Saizul.com/bioscope-remotion-3d"
 npm install
 ```
 
@@ -66,3 +65,9 @@ npm run tts
 npm run build
 ```
 This outputs `out/bioscope-corporate-3d.mp4` rendered at 1920x1080, 30fps.
+
+### Type check
+```bash
+npm run typecheck
+```
+The same check runs in GitHub Actions on every push and pull request.
