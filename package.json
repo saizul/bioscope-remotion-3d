@@ -6,7 +6,9 @@
     "start": "remotion preview src/index.ts",
     "build": "remotion render src/index.ts BioscopeCorporateVideo out/bioscope-corporate-3d.mp4",
     "tts": "node scripts/generate-voiceover.js",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "check": "tsx scripts/check-timeline.ts",
+    "test": "node --import tsx --test test/*.test.ts"
   },
   "dependencies": {
     "@react-three/drei": "^9.105.0",
@@ -23,6 +25,7 @@
     "@types/node": "^20.12.7",
     "@types/react": "^18.2.79",
     "@types/three": "^0.164.0",
+    "tsx": "4.23.15",
     "typescript": "^5.4.5"
   }
 }
