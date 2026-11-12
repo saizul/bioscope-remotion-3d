@@ -66,8 +66,34 @@ npm run build
 ```
 This outputs `out/bioscope-corporate-3d.mp4` rendered at 1920x1080, 30fps.
 
-### Type check
+### Type check, timeline check and tests
 ```bash
 npm run typecheck
+npm run check      # timeline, voice-over and SFX consistency (no rendering)
+npm test           # unit tests for the checks
 ```
-The same check runs in GitHub Actions on every push and pull request.
+All three run in GitHub Actions on every push and pull request.
+
+---
+
+## 4. Changing the timing
+
+Scene start frames and lengths live in **one place**: `src/timeline.ts`. The master sequence (`MainVideo.tsx`) and the per-scene previews (`Root.tsx`) are built from it, and sound-effect cues live in `src/sfxTriggers.ts`.
+
+The voice-over script (`src/voiceoverScript.json`) is also read by the TTS generator, so it keeps its own frame numbers. `npm run check` (`scripts/check-timeline.ts`) makes sure everything still lines up after an edit:
+
+| Check | Level |
+| --- | --- |
+| Scenes start at 0, follow each other with no gap or overlap, and add up to exactly 3600 frames (2:00) | error |
+| Each voice-over entry matches its scene's frames; `endFrame - startFrame = durationInFrames`; audio file names are unique and plain | error |
+| Narration fits the scene at 160 words per minute (otherwise the TTS line is cut off) | warning |
+| `timeRange` text matches the frames | warning |
+| SFX ids are unique, frames are inside the video, files are one of `whoosh/swoosh/pop/click/chime.mp3`, volume 0-1, and an `sN_` id really falls in scene N | error |
+
+Example after moving scene 3 without updating the script:
+
+```text
+ERROR  voiceoverScript.json: scene_3: frames 1050-1950 do not match Scene3-WhyOrganizations (1080-1980); update the JSON after changing timeline.ts
+```
+
+`--strict` makes warnings fail too.
